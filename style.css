@@ -163,7 +163,7 @@ body {
     font-weight: bold;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 850px) {
     .container {
         font-size: 1rem;
     }
