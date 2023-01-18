@@ -11,7 +11,6 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
  a {
     all: unset;
     cursor: pointer;
@@ -21,16 +20,16 @@ body {
     --font-color: #222222;
     --prime-color: 	 #86b278;    ;
 }
-
-
 .slogan{
     font-size: 3.1rem;
     margin-top: 4%;
     margin-left: 17%;
-    margin-bottom: 6%;
+    margin-bottom: 4%;
     font-weight: 0;
     color: #333;
     display: block;
+    
+
     
 }
 
@@ -53,6 +52,58 @@ body {
 	float: left;
 	height:auto;
 }
+.about--wrapper{
+    width: 80%;
+    margin: auto;
+    font-size: 0.8rem;
+}
+.notification--wrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid #cccccc;
+}
+.notification--wrapper-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notification--wrapper-flex p{
+    margin-bottom: 0 !important;
+    margin-left: 1rem;
+}
+.kartica--wrapper{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+
+}
+.kartica--kupci-pointer-wrapper p{
+    margin-top: 0.5rem;
+}
+.kartica--kupci-pointer-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.kartica--kupci-pointer {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-top: 25px solid #efefef;
+    left: 40px;
+  } 
+.kartica:nth-child(2){
+    width: 25%;
+}
+ .kartica--kupci{
+    padding: 1.5rem;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px 0 rgb(180 180 180 / 10%); 
+} 
 .ponuda{
     
     
@@ -60,6 +111,22 @@ body {
  background-color: #F8F9F9;
  border-bottom: 12px solid #F8F9F9;
 }
+.visitka{
+    
+    
+    /*   background-color: #F2F3F4;*/
+    background-color: #F8F9F9;
+    border-bottom: 12px solid #F8F9F9;
+    padding: 0 5vw;
+    display: flex;
+    
+   }
+   .visitka-title{
+       height: 10vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
 .partneri{
     margin-top: 2%;
     border-bottom: 4px solid #86b278;
@@ -79,8 +146,8 @@ body {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;  
+    line-height: 133%;
 }
-
 
 
 .flex {
@@ -116,11 +183,9 @@ body {
     align-items: center;
 }
 
-  #dropdown-menu>li {
-      font-size: 10px;
-    }
-  
-
+.dropdown-menu[data-bs-popper]{
+    border: 0;
+}
 
 .navbar .close-nav {
     display: none;
@@ -150,7 +215,7 @@ body {
 }
 
 
-@media (max-width: 650px) {
+@media (max-width: 850px) {
     .container {
         font-size: 1rem;
     }
@@ -230,4 +295,39 @@ body {
 @font-face {
     font-family:"Sans Pro";
     src: url(Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+
+.row .bebica{
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    margin: 0;
+    
+}
+.row.bebica div{
+    margin: 0 3rem;
+    padding-top: 1rem;
+}
+.row.bebica h6{
+    font-size: 1.2rem;
+}
+.row.bebica p{
+    font-size: 0.8rem;
+}
+.visitka--title{
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    background: #333; 
+    padding: 1rem 0;
+    color: white;
+
+}
+.futeraljka{
+    border-top: 4px solid #86b278;
+
 }
