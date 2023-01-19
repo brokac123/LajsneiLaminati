@@ -95,8 +95,9 @@ body {
 .footer{
     /*background: #424949; */
     background: #333; 
-    padding: 1rem 0;
+    padding: 1rem 1rem;
     color: white;
+    
 }
 .slogan{
     font-size: 3.1rem;

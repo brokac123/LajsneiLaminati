@@ -133,7 +133,7 @@ body {
 }
 .footer{
     background: #424949;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
     color: white;
 }
 
@@ -329,5 +329,6 @@ body {
 }
 .futeraljka{
     border-top: 4px solid #86b278;
+    
 
 }
