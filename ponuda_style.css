@@ -1,0 +1,248 @@
+:root {
+    --body-bg: #fafcf5;
+    --font-color: #222222;
+    --prime-color: 	 #86b278;    ;
+}
+body {
+	background: #fff;
+/*	font: 12px/17px "OpenSansRegular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font: 12px/17px "Sans Pro";
+	color: #333 /* 656565 */;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.header .wrap {
+    max-width: 1200px;
+    height: 100px;
+    padding: 0 20px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  #dropdown-menu>li {
+      font-size: 10px;
+    }
+  
+
+.navbar .close-nav {
+    display: none;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+}
+.navbar ul li a:hover{
+    background-color: rgba(255,255,255,0.8);
+    color: #86b278;
+
+}
+.navbar li {
+    padding: 0 0.6em;
+}
+
+.navbar a {
+    font-size: 1.125rem;
+    display: block;
+    padding: 0.3em;
+    font-weight: bold;
+}
+a {
+    all: unset;
+    cursor: pointer;
+} 
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+    .container {
+        font-size: 1rem;
+    }
+    .icon-bar {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--prime-color);
+        width: 50px;
+        height: 50px;
+        padding: 0 12px;
+        border-radius: 3px;
+    }
+    .icon-bar:hover {
+        background-color: #fffaf6;
+    }
+    .icon-bar span {
+        border-top: 2px solid var(--font-color);
+        width: 100%;
+    }
+    .icon-bar span::before,
+    .icon-bar span::after {
+        content: "";
+        border-bottom: 2px solid var(--font-color);
+        display: block;
+        height: 8px;
+    }
+    .overflow-none {
+        overflow: hidden;
+    }
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        transition: 0.2s linear;
+        transform: scale(0);
+        top: 0;
+        left: 0;
+        background-color: #fafcf5;
+        z-index: 9;
+    }
+
+    .navbar .close-nav {
+        all: unset;
+        font-size: 2.5rem;
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        cursor: pointer;
+    }
+    .navbar .close-nav:hover {
+        color: #999999;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+    .navbar li {
+        padding: 0.7rem 0;
+    }
+    .navbar a {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+    .nav-scale {
+        transform: scale(1) !important;
+    }
+}
+
+
+.slogan{
+    font-size: 3.1rem;
+    margin-top: 4%;
+    margin-left: 17%;
+    margin-bottom: 1%;
+    font-weight: 0;
+    color: #333;
+    display: block;
+    
+}
+
+ .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.social a {
+	opacity:0.5;
+	margin: 0 10px 0 10px;
+	float: left;
+	transition: opacity 0.2s;
+}
+.social a:hover {
+	opacity:1;
+}
+.social a img {
+	float: left;
+	height:auto;
+} 
+.footer{
+    /*background: #424949; */
+    background: #333; 
+    padding: 1rem 0;
+    color: white;
+}
+.color{
+    color: #86b278;
+}
+.first{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;  
+    line-height: 133%;
+}
+.dropdown-menu[data-bs-popper]{
+    border: 0;
+}
+@font-face {
+    font-family:"Sans Pro";
+    src: url(Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+.container{
+    width: 100%;
+   /* min-height: 100vh; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem 8%;
+    
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.gallery img{
+    width: 100%;
+    display: flex;
+    
+}
+#myBtnContainer{
+    display: flex;
+    justify-content: center;
+}
+.description{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1rem;
+    margin-left: 20%;
+    
+}
+.description-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1rem;
+    margin-left: 20%;
+    margin-top: 2%;
+    
+}
+.wrapper{
+    width: 60%;
+    margin: auto;
+    padding: 5rem 0;
+    background-color: red;
+}
