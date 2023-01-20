@@ -132,10 +132,18 @@ body {
     border-bottom: 4px solid #86b278;
 }
 .footer{
-    background: #424949;
+    background-color: #333;
     padding: 1rem 1rem;
     color: white;
+    
+    
 }
+.futeraljka{
+    border-top: 4px solid #86b278;
+    
+    
+}
+
 
 .color{
     color: #86b278;
@@ -320,15 +328,4 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.footer{
-    background: #333; 
-    padding: 1rem 0;
-    color: white;
-
-}
-.futeraljka{
-    border-top: 4px solid #86b278;
-    
-
 }

@@ -127,13 +127,11 @@ body {
     height: 100px;
     padding: 0 20px;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
 }
 
-  #dropdown-menu>li {
-      font-size: 10px;
-    }
+  
   
 
 .navbar .close-nav {
@@ -148,7 +146,8 @@ body {
     align-items: center;
 }
 .navbar ul li a:hover{
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.8); 
+    
     color: #86b278;
 
 }
@@ -236,6 +235,81 @@ body {
         transform: scale(1) !important;
     }
 }
+@media (max-width: 375px) {
+    .container {
+        font-size: 1rem;
+    }
+    .icon-bar {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--prime-color);
+        width: 50px;
+        height: 50px;
+        padding: 0 12px;
+        border-radius: 3px;
+    }
+    .icon-bar:hover {
+        background-color: #fffaf6;
+    }
+    .icon-bar span {
+        border-top: 2px solid var(--font-color);
+        width: 100%;
+    }
+    .icon-bar span::before,
+    .icon-bar span::after {
+        content: "";
+        border-bottom: 2px solid var(--font-color);
+        display: block;
+        height: 8px;
+    }
+    .overflow-none {
+        overflow: hidden;
+    }
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        transition: 0.2s linear;
+        transform: scale(0);
+        top: 0;
+        left: 0;
+        background-color: #fafcf5;
+        z-index: 9;
+    } 
+    .navbar .close-nav {
+        all: unset;
+        font-size: 2.5rem;
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 2.5rem;
+        cursor: pointer; 
+    }
+    .navbar .close-nav:hover {
+        color: #999999;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+    .navbar li {
+        padding: 0.7rem 0;
+    }
+    .navbar a {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+    .nav-scale {
+        transform: scale(1) !important;
+    }
+}
+
+
 .service-img{
     width: 100%;
     height: auto;
