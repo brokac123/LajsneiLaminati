@@ -275,9 +275,22 @@ a {
     font-weight: 500 solid;
     
 }
-.wrapper{
-    width: 60%;
-    margin: auto;
-    padding: 5rem 0;
-    background-color: red;
+
+
+.sort--wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
 }
+.sort--wrapper > div {
+    cursor: pointer;
+    color: #86b278;
+    
+}
+
+
+.none{
+    display: none !important;
+}
+
