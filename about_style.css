@@ -103,6 +103,7 @@ body {
     padding: 1.5rem;
     border: 1px solid #e5e5e5;
     box-shadow: 0 1px 1px 0 rgb(180 180 180 / 10%); 
+    
 } 
 .ponuda{
     
@@ -305,15 +306,16 @@ body {
     src: url(Source_Sans_Pro/SourceSansPro-Regular.ttf);
 }
 
-.row .bebica{
+.row{
     display: flex;
     justify-content: center;
-    padding: 0 1rem;
+    gap: 2rem;
     margin: 0;
+    padding: 3%;
     
 }
 .row.bebica div{
-    margin: 0 3rem;
+    
     padding-top: 1rem;
 }
 .row.bebica h6{
@@ -328,4 +330,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+@media(max-width:768px)
+{
+    .color{
+        position: relative;
+    }
+    .kartica--kupci{
+        
+        width: fit-content;
+    }
+    .kartica--kupci-pointer-wrapper>p{
+        position: relative;
+    }
+
 }
