@@ -318,3 +318,11 @@ body {
     font-family:"Sans Pro";
     src: url(Source_Sans_Pro/SourceSansPro-Regular.ttf);
 }
+@media(max-width:424px)
+{
+
+    .header--logo{
+        width: 80%;
+    }
+
+}

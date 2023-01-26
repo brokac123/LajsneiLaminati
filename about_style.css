@@ -306,7 +306,7 @@ body {
     src: url(Source_Sans_Pro/SourceSansPro-Regular.ttf);
 }
 
-.row{
+.bebica{
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -323,7 +323,7 @@ body {
 }
 .row.bebica p{
     font-size: 0.8rem;
-}
+} 
 .visitka--title{
     padding: 1rem;
     font-size: 1.5rem;
@@ -331,7 +331,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+.footer>img{
+    max-width: 100%;
 
+}
 
 
 @media(max-width:768px)
@@ -345,6 +348,14 @@ body {
     }
     .kartica--kupci-pointer-wrapper>p{
         position: relative;
+    }
+
+}
+@media(max-width:424px)
+{
+
+    .header--logo{
+        width: 80%;
     }
 
 }
