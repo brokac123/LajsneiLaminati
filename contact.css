@@ -270,6 +270,14 @@ body {
       height: 400px;
     }
   }
+ 
+ @media(max-width:768px)
+ {
+    .slogan{
+        font-size: 2rem;
+        
+    }
+ } 
   
 @font-face {
     font-family:"Sans Pro";

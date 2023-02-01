@@ -221,6 +221,7 @@ a {
 .gallery img{
     width: 100%;
     display: flex;
+    cursor: zoom-in;
     
     
 }
@@ -324,12 +325,7 @@ a {
     background-color: #666;
   }
 
-  .footer>i{
-
-  }
-  .i--padding{
-    padding: 0.5rem;
-  }
+  
   
   
   @media (max-width: 425px) {
@@ -345,8 +341,11 @@ a {
     .futeraljka{
         width:fit-content;
     }
+    .gallery{
+        justify-content: space-around;
+    }
 
-  }
+  } 
 
   @media(max-width:424px)
 {
