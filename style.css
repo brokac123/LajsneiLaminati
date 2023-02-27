@@ -307,6 +307,9 @@ body {
     .nav-scale {
         transform: scale(1) !important;
     }
+    .dropdown-menu[data-bs-popper]{
+        border: 0;
+    }
 }
 
 

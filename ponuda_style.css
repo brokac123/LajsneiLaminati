@@ -201,9 +201,15 @@ a {
     font-family:"Sans Pro";
     src: url(Source_Sans_Pro/SourceSansPro-Regular.ttf);
 }
-.c {
+
+
+/*.c{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+} */
+ .c {
     width: 100%;
-   /* min-height: 100vh; */
     display: flex;
     align-items: flex-start;
     justify-content:flex-start;
@@ -214,13 +220,13 @@ a {
 
 .gallery{
     display: flex;
-    justify-content: flex-start;
+    
+    
     flex-wrap: wrap;
     gap: 2rem;
 }
 .gallery img{
     width: 100%;
-    display: flex;
     cursor: zoom-in;
     
     
@@ -236,7 +242,7 @@ a {
     font-weight: 500 solid;
     
     
-}
+} */
 .futeraljka{
     border-top: 4px solid #86b278;
 
@@ -277,12 +283,7 @@ a {
 }
 
 
- /*.sort--wrapper{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-
-} */
+ 
 
 .sort--wrapper{
 
@@ -342,7 +343,11 @@ a {
         width:fit-content;
     }
     .gallery{
-        justify-content: space-around;
+
+        
+        display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: flex-start;
     }
 
   } 
